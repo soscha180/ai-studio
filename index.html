@@ -1,0 +1,35 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Studio — Chat & Images</title>
+<link rel="stylesheet" href="/public/style.css">
+
+<header class="topbar">
+  <h1>AI Studio</h1>
+  <div class="auth">
+    <input id="proCode" placeholder="Pro access code" />
+    <button id="usePro">Use Pro</button>
+    <button id="newChat">New chat</button>
+  </div>
+</header>
+
+<main>
+  <section id="tab-chat" class="tab active">
+    <div id="chat" class="chat"></div>
+    <form id="chatForm" class="bar">
+      <input id="prompt" placeholder="Ask the AI…" required>
+      <button>Send</button>
+    </form>
+  </section>
+
+  <section id="tab-image" class="tab">
+    <div class="img-tool">
+      <input id="imgPrompt" placeholder="Describe the image…" required />
+      <button id="makeImage">Generate</button>
+    </div>
+    <div id="imgResult" class="img-result"></div>
+  </section>
+</main>
+
+<footer class="foot"><a id="upgradeLink" target="_blank" rel="noopener">Upgrade to Pro</a></footer>
+<script src="/public/app.js"></script>
